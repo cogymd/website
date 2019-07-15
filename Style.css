@@ -1,5 +1,31 @@
 body
 {
 	background-color: #FFD812;
-	font-style: oblique;
+	font-family: "Helvetica Neue", Sans-serif;
+	margin: 0em;
+}
+
+#center
+{
+	position:relative;
+}
+
+#sidebar 
+{
+	background-color: #FFFFFF;
+	display: inline-block;
+	width: 30%;
+  	height: 80em;
+  	padding: 1em;
+  	position: fixed;
+  	left: 0px;
+  	top: 0px;
+}
+
+#sidebarList
+{	
+	font-size: 3em;
+	list-style-type: none;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
 }
