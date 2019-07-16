@@ -40,6 +40,8 @@ footer
 	display: inline-block;
   	min-height: 100em;
   	max-width: 20%
+  	min-width: 20%
+  	padding-right: 1em;
 	width: 20%;
   	height: 100%;
   	float: left;
@@ -49,10 +51,10 @@ footer
 
 #sidebarList
 {	
-	font-size: 2em;
+	font-size: 1.8em;
 	list-style-type: none;
 	letter-spacing: 0.1em;
-	line-height: 1.5;
+	line-height: 2;
 }
 
 #sidebarList li:hover 
