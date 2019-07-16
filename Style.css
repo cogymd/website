@@ -5,12 +5,7 @@ body
 	margin: 0em;
 }
 
-#center
-{
-	position: relative;
-	left: 40%;
-	width: 40%;
-}
+
 
 footer
 {
@@ -22,9 +17,9 @@ footer
 	background-color: #FFFFFF;
 	display: inline-block;
 	width: 30%;
-  	height: 100%;
+  	min-height: 100em;
   	padding: 1em;
-  	position: fixed;
+  	float: left;
   	left: 0px;
   	top: 0px;
 }
@@ -40,4 +35,9 @@ footer
 #sidebarList li:hover 
 {
 	color: #FFD812;
+}
+
+#center
+{	
+	width: 40%;
 }
