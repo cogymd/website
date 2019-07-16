@@ -31,12 +31,12 @@ function toggleSidebar(){
 function moveSidebar(){
 	sidebar = document.getElementById("sidebar");
 	if (sidebarOn){
-		if (sidebarPos <= -25){
+		if (sidebarPos <= -22){
 			clearInterval(slide);
 			sidebarOn = false;
 		}
 		else{
-			sidebarPos -= 0.5;
+			sidebarPos -= 0.4;
 			sidebar.style.left = sidebarPos + "%";
 		}
 	}
@@ -47,16 +47,20 @@ function moveSidebar(){
 			sidebar.style.left = "0%";
 		}
 		else{
-			sidebarPos += 0.5;
+			sidebarPos += 0.4;
 			sidebar.style.left = sidebarPos + "%";
 		}
 	}
 
 	sidebarButton = document.getElementById("toggleSidebar");
-	if (sidebarPos> -17){
-		sidebarButton.style.left = (sidebarPos+18) + "%";
+	if (sidebarPos> -16){
+		sidebarButton.style.left = (sidebarPos + 17) + "%";
 	}
 	else{
 		sidebarButton.style.left = "1%";
 	}
+
+	centerContent = document.getElementById("center");
+
+	centerContent.style.left = (sidebarPos + 35) + "%";
 }
