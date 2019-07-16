@@ -28,6 +28,7 @@ footer
 #sidebar 
 {
 	background-color: #FFFFFF;
+	position: fixed;
 	display: inline-block;
   	min-height: 100em;
 	width: 20%;
@@ -48,5 +49,6 @@ footer
 
 #sidebarList li:hover 
 {
+	cursor: pointer;
 	color: #FFD812;
 }
