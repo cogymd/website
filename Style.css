@@ -11,11 +11,15 @@ body
 	width: 100%;
 }
 
-header
-{
-	position: relative;
-	left: 50%;
+header{
+	margin: auto;
 	width: 50%;
+}
+
+header img
+{
+	display: block;
+  	margin: auto;
 }
 
 main
@@ -23,6 +27,7 @@ main
 	font-family: "Palatino Linotype", serif;
 	font-size: 1.2em;
 	margin: 2em;
+	margin-bottom: 0;
 	padding: 2em;
 	background-color: #FFFFFF;
 
@@ -47,7 +52,7 @@ footer
 	bottom: 0;
 	padding-left: 2em;
 	background-color: #000000;
-	min-width: 140%;
+	min-width: 98%;
 	color:  #FFD812;
 	position: absolute;
 }
