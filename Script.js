@@ -21,7 +21,7 @@ function goTo(n){
 
 //Toggle sidebar
 sidebarOn = false;
-sidebarPos = -25;
+sidebarPos = -21
 var slide;
 function toggleSidebar(){
 	clearInterval(slide);
@@ -31,7 +31,7 @@ function toggleSidebar(){
 function moveSidebar(){
 	sidebar = document.getElementById("sidebar");
 	if (sidebarOn){
-		if (sidebarPos <= -22){
+		if (sidebarPos <= -21){
 			clearInterval(slide);
 			sidebarOn = false;
 		}
@@ -62,5 +62,5 @@ function moveSidebar(){
 
 	centerContent = document.getElementById("center");
 
-	centerContent.style.left = (sidebarPos + 35) + "%";
+	centerContent.style.left = (sidebarPos + 21) + "%";
 }

@@ -8,7 +8,6 @@ body
 #center
 {
 	position: relative;
-	left: 10%;
 	width: 80%;
 }
 
@@ -30,11 +29,11 @@ main
 
 footer
 {
-	margin: 0;
-	left: -12.5%;
-	padding: 2em;
+	left: 0;
+	bottom: 0;
+	padding-left: 2em;
 	background-color: #000000;
-	min-width: 120%;
+	min-width: 140%;
 	color:  #FFD812;
 	position: absolute;
 }
@@ -43,12 +42,11 @@ footer
 {
 	background-color: #FFFFFF;
 	position: fixed;
-  	min-height: 100em;
   	padding-right: 1em;
 	width: 20%;
   	height: 100%;
   	float: left;
-  	left: -22%;
+  	left: -21%;
   	top: 0px;
 }
 
