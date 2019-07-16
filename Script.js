@@ -7,7 +7,7 @@ if(navigator.userAgent.indexOf("Safari") != -1 && navigator.userAgent.indexOf("C
 //Sidebar buttons
 scrSettings = {behavior:"smooth", block:"start", inline:"nearest"}
 
-anchors = ["top","info","gallery", "testimonials", "purchase", "specifications"]
+anchors = ["home","info","gallery", "testimonials", "purchase", "specifications"]
 function goTo(n){
 	var anc = document.getElementById(anchors[n]);
 	if (safari){
