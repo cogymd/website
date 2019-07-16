@@ -7,7 +7,14 @@ body
 
 #center
 {
-	position:relative;
+	position: relative;
+	left: 40%;
+	width: 40%;
+}
+
+footer
+{
+
 }
 
 #sidebar 
@@ -15,7 +22,7 @@ body
 	background-color: #FFFFFF;
 	display: inline-block;
 	width: 30%;
-  	height: 80em;
+  	height: 100%;
   	padding: 1em;
   	position: fixed;
   	left: 0px;
@@ -28,4 +35,9 @@ body
 	list-style-type: none;
 	letter-spacing: 0.1em;
 	line-height: 1.5;
+}
+
+#sidebarList li:hover 
+{
+	color: #FFD812;
 }
