@@ -20,8 +20,8 @@ function goTo(n){
 }
 
 //Toggle sidebar
-sidebarOn = true;
-sidebarPos = 0;
+sidebarOn = false;
+sidebarPos = -25;
 var slide;
 function toggleSidebar(){
 	clearInterval(slide);

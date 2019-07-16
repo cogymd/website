@@ -35,7 +35,7 @@ footer
   	height: 100%;
   	padding: 1em;
   	float: left;
-  	left: 0px;
+  	left: -25%;
   	top: 0px;
 }
 
@@ -55,7 +55,7 @@ footer
 
 #toggleSidebar{
 	position: fixed;
-	left: 18%;
+	left: 1%;
 	top: 2%;
 	width: 44px;
 	height: 44px;
