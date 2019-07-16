@@ -1,12 +1,15 @@
 body
 {
 	background-color: #FFD812;
-	font-family: "Helvetica Neue", Sans-serif;
+	font-family: "Oxygen", sans-serif;
 	margin: 0em;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 #center
 {
+	
 	position: relative;
 	width: 100%;
 }
@@ -24,13 +27,38 @@ header img
 
 main
 {
-	font-family: "Palatino Linotype", serif;
 	font-size: 1.2em;
 	margin: 2em;
 	margin-bottom: 0;
 	padding: 2em;
 	background-color: #FFFFFF;
 
+}
+
+.parallax{
+  /* The image used */
+  background-image: url("https://pkf-francisclarkcareers.co.uk/wp-content/uploads/2017/10/placeholder.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text{
+	padding-top: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	background-color: #FFFFFF
+}
+
+#logo{
+	left: 20%;
 }
 
 #gallery
@@ -52,9 +80,9 @@ footer
 	bottom: 0;
 	padding-left: 2em;
 	background-color: #000000;
-	min-width: 98%;
+	min-width: 100%;
 	color:  #FFD812;
-	position: absolute;
+	position:fixed;
 }
 
 #sidebar 
