@@ -52,3 +52,13 @@ footer
 	cursor: pointer;
 	color: #FFD812;
 }
+
+#toggleSidebar{
+	position: fixed;
+	left: 18%;
+	top: 2%;
+	width: 44px;
+	height: 44px;
+	background-color: #444444;
+	z-index: 9000;
+}
