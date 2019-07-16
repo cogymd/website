@@ -28,6 +28,19 @@ main
 
 }
 
+#gallery
+{	
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#gallery > img
+{
+	margin: 1em;
+}
+
 footer
 {
 	margin: 0;
