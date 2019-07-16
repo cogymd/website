@@ -5,6 +5,18 @@ body
 	margin: 0em;
 }
 
+#center
+{
+	position: relative;
+	left: 10%;
+	width: 80%;
+}
+
+header
+{
+	position: relative;
+	left: 50%;
+}
 
 main
 {
@@ -15,20 +27,13 @@ main
 
 }
 
-#center
-{
-	position: relative;
-	left: 10%;
-	width: 80%;
-}
-
 footer
 {
 	margin: 0;
-	left: -3em;
-	padding-left: 3em;
+	left: -12.5%;
+	padding: 2em;
 	background-color: #000000;
-	width: 100%;
+	min-width: 120%;
 	color:  #FFD812;
 	position: absolute;
 }
@@ -37,7 +42,6 @@ footer
 {
 	background-color: #FFFFFF;
 	position: fixed;
-	display: inline-block;
   	min-height: 100em;
   	padding-right: 1em;
 	width: 20%;
