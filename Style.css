@@ -5,6 +5,15 @@ body
 	margin: 0em;
 }
 
+
+.main
+{
+	margin: 2em;
+	
+	background-color: #FFFFFF;
+
+}
+
 #center
 {
 	position:relative;
@@ -14,7 +23,7 @@ body
 {
 	background-color: #FFFFFF;
 	display: inline-block;
-	width: 30%;
+	width: 20%;
   	height: 80em;
   	padding: 1em;
   	position: fixed;
@@ -24,7 +33,7 @@ body
 
 #sidebarList
 {	
-	font-size: 3em;
+	font-size: 2em;
 	list-style-type: none;
 	letter-spacing: 0.1em;
 	line-height: 1.5;
