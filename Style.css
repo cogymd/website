@@ -8,7 +8,7 @@ body
 #center
 {
 	position: relative;
-	width: 80%;
+	width: 100%;
 }
 
 header
@@ -20,9 +20,10 @@ header
 
 main
 {
-	font-size: 1.5em;
+	font-family: "Palatino Linotype", serif;
+	font-size: 1.2em;
 	margin: 2em;
-	padding: 1em;
+	padding: 2em;
 	background-color: #FFFFFF;
 
 }
