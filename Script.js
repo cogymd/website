@@ -107,13 +107,12 @@ function fullScreen(n){
 
 function expandImg(){
 	if (imgWidth < w && imgHeight < h){
-		imgWidth *= 1.08;
-		imgHeight *= 1.08;
+		imgWidth *= 1.04;
+		imgHeight *= 1.04;
 		img.style.width = Math.round(imgWidth) + "px";
 		img.style.height = Math.round(imgHeight) + "px";
 		img.style.marginLeft = imgWidth/-2 + "px";
 		img.style.marginTop = imgHeight/-2 + "px";
-		console.log("poopy");
 	}
 	else{
 		clearInterval(expand);
