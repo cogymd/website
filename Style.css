@@ -116,3 +116,7 @@ footer
 	background-color: #444444;
 	z-index: 9000;
 }
+
+canvas{
+	margin: 5px;
+}

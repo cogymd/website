@@ -19,6 +19,15 @@ function goTo(n){
 	console.log("Scrolled to", anchors[n])
 }
 
+var sidebarIcon = document.getElementById("sidebarIcon");
+var ctx = sidebarIcon.getContext("2d");
+ctx.lineWidth = 4;
+ctx.strokeStyle = "#FFFFFF"
+ctx.moveTo(12,8);
+ctx.lineTo(20,16);
+ctx.lineTo(12,24);
+ctx.stroke();
+
 //Toggle sidebar
 sidebarOn = false;
 sidebarPos = -21
@@ -26,6 +35,21 @@ var slide;
 function toggleSidebar(){
 	clearInterval(slide);
 	slide = setInterval(moveSidebar, 5);
+	ctx.clearRect(0, 0, sidebarIcon.width, sidebarIcon.height);
+	ctx.beginPath();
+	if(sidebarOn){
+		ctx.moveTo(12,8);
+		ctx.lineTo(20,16);
+		ctx.lineTo(12,24);
+	}
+	else{
+		
+		ctx.moveTo(20,8);
+		ctx.lineTo(12,16);
+		ctx.lineTo(20,24);
+	}	
+
+	ctx.stroke();
 }
 
 function moveSidebar(){
@@ -120,3 +144,4 @@ function expandImg(){
 	}
 	
 }
+
