@@ -70,20 +70,20 @@ h2{
 }
 
 #intro > img{
-	width: 600px;
-	height: 420px; 
 	float: left;
-	margin: 0 2em 1em;"
+	margin: 0 2em 1em;
+	width: 600px;
+	height: 420px;
 }
 #intro > p{
 	margin-left: 680px
 }
 
 #safety > img{
-	width: 600px;
-	height: 420px; 
 	float: right;
-	margin:0 2em 1em;"
+	margin:0 2em 1em;
+	width: 600px;
+	height: 420px;
 }
 
 #safety > p{
@@ -91,10 +91,10 @@ h2{
 }
 
 #convenience > img{
-	width: 600px;
-	height: 420px; 
 	float: left;
-	margin: 0 2em 1em;"
+	margin: 0 2em 1em;
+	width: 600px;
+	height: 420px;
 }
 #convenience > p{
 	margin-left: 680px
@@ -110,9 +110,11 @@ h2{
     justify-content: space-around;
 }
 
-.galleryImg
+#gallery img
 {
 	margin: 1em;
+	width: 500px;
+	height: 500px;
 }
 
 footer
