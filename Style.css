@@ -11,7 +11,8 @@ body
 {
 	
 	position: relative;
-	width: 100%;
+	left: 10%;
+	width: 80%;
 }
 
 header{
@@ -56,6 +57,18 @@ main
 #logo{
 	left: 20%;
 }
+
+#info{
+	padding: 2em;
+}
+
+#info > #intro > img{
+	width: 600px;
+	height: 338px; 
+	float:left;
+	margin:1em 2em 1em;"
+}
+
 
 #gallery
 {	
