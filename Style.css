@@ -59,17 +59,14 @@ main
 }
 
 #info{
-	padding: 2em;
+	padding: 2em 2em 9em;
 }
 
 h2{
 	margin: 1em;
 	text-align: center;
 	width:90%;
-}
-
-#info img{
-	display: inline-block;
+	clear: both;
 }
 
 #intro > img{
@@ -106,6 +103,7 @@ h2{
 
 #gallery
 {	
+	clear: both;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
