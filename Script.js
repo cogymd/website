@@ -68,7 +68,7 @@ function moveSidebar(){
 var fullScreenOn = false;
 var w = window.innerWidth;
 var h = window.innerHeight;
-
+var img;
 var origWidth;
 var origHeight;
 
@@ -77,7 +77,7 @@ var imgWidth;
 
 var expand;
 function fullScreen(n){
-	img = document.getElementsByClassName("galleryImg")[n];
+	
 	if (fullScreenOn){
 		img.style.position = "static";
 		img.style.zIndex = "0";
@@ -87,6 +87,7 @@ function fullScreen(n){
 		fullScreenOn = false;
 	}
 	else{
+		img = document.getElementsByClassName("galleryImg")[n];
 		origWidth = parseInt(img.style.width.replace("px",""));
 		origHeight = parseInt(img.style.height.replace("px",""));
 		imgWidth = origWidth;
@@ -98,13 +99,13 @@ function fullScreen(n){
 		img.style.marginLeft = imgWidth/-2 + "px";
 		img.style.top = "50%";
 		img.style.marginTop = imgHeight/-2 + "px";
-		expand = setInterval(expandImg,5,img);
+		expand = setInterval(expandImg,5);
 		
 		fullScreenOn = true;
 	}
 }
 
-function expandImg(img){
+function expandImg(){
 	if (imgWidth < w && imgHeight < h){
 		imgWidth *= 1.08;
 		imgHeight *= 1.08;
