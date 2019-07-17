@@ -62,7 +62,7 @@ main
 	padding: 2em;
 }
 
-#info > #intro > img{
+#intro > img{
 	width: 600px;
 	height: 338px; 
 	float:left;

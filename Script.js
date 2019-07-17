@@ -62,7 +62,7 @@ function moveSidebar(){
 
 	centerContent = document.getElementById("center");
 
-	centerContent.style.left = (sidebarPos + ) + "%";
+	centerContent.style.left = (sidebarPos + 31) + "%";
 }
 
 var fullScreenOn = false;
