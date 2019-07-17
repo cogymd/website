@@ -11,7 +11,8 @@ body
 {
 	
 	position: relative;
-	width: 100%;
+	left: 10%;
+	width: 80%;
 }
 
 header{
@@ -57,8 +58,52 @@ main
 	left: 20%;
 }
 
+#info{
+	padding: 2em 2em 9em;
+}
+
+h2{
+	margin: 1em;
+	text-align: center;
+	width:90%;
+	clear: both;
+}
+
+#intro > img{
+	width: 600px;
+	height: 420px; 
+	float: left;
+	margin: 0 2em 1em;"
+}
+#intro > p{
+	margin-left: 680px
+}
+
+#safety > img{
+	width: 600px;
+	height: 420px; 
+	float: right;
+	margin:0 2em 1em;"
+}
+
+#safety > p{
+	margin-right: 680px
+}
+
+#convenience > img{
+	width: 600px;
+	height: 420px; 
+	float: left;
+	margin: 0 2em 1em;"
+}
+#convenience > p{
+	margin-left: 680px
+}
+
+
 #gallery
 {	
+	clear: both;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
