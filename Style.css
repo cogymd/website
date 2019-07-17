@@ -28,7 +28,7 @@ header img
 main
 {
 	font-size: 1.2em;
-	margin: 2em, 2em, 0;
+	margin: 2em 2em 0;
 	padding: 2em;
 	background-color: #FFFFFF;
 
@@ -49,7 +49,7 @@ main
 }
 
 .text{
-	padding: 1em, 2em, 1em;
+	padding: 1em 2em 1em;
 	background-color: #FFFFFF
 }
 
