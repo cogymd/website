@@ -50,10 +50,7 @@ main
 }
 
 .text{
-	padding-top: 1em;
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-bottom: 1em;
+	padding: 1em 2em;
 	background-color: #FFFFFF
 }
 
@@ -69,7 +66,7 @@ main
     justify-content: space-around;
 }
 
-#gallery > img
+.galleryImg
 {
 	margin: 1em;
 }

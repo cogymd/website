@@ -64,3 +64,58 @@ function moveSidebar(){
 
 	centerContent.style.left = (sidebarPos + 21) + "%";
 }
+
+var fullScreenOn = false;
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+var origWidth;
+var origHeight;
+
+var imgHeight;
+var imgWidth;
+
+var expand;
+function fullScreen(n){
+	img = document.getElementsByClassName("galleryImg")[n];
+	if (fullScreenOn){
+		img.style.position = "static";
+		img.style.zIndex = "0";
+		img.style.width = origWidth + "px";
+		img.style.height = origHeight + "px";
+		img.style.margin = "1em";
+		fullScreenOn = false;
+	}
+	else{
+		origWidth = parseInt(img.style.width.replace("px",""));
+		origHeight = parseInt(img.style.height.replace("px",""));
+		imgWidth = origWidth;
+		imgHeight = origHeight;
+		img.style.position = "fixed";
+		img.style.zIndex = "3";
+
+		img.style.left = "50%";
+		img.style.marginLeft = imgWidth/-2 + "px";
+		img.style.top = "50%";
+		img.style.marginTop = imgHeight/-2 + "px";
+		expand = setInterval(expandImg,5,img);
+		
+		fullScreenOn = true;
+	}
+}
+
+function expandImg(img){
+	if (imgWidth < w && imgHeight < h){
+		imgWidth *= 1.08;
+		imgHeight *= 1.08;
+		img.style.width = Math.round(imgWidth) + "px";
+		img.style.height = Math.round(imgHeight) + "px";
+		img.style.marginLeft = imgWidth/-2 + "px";
+		img.style.marginTop = imgHeight/-2 + "px";
+		console.log("poopy");
+	}
+	else{
+		clearInterval(expand);
+	}
+	
+}
