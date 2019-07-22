@@ -93,36 +93,30 @@ var fullScreenOn = false;
 var w = window.innerWidth;
 var h = window.innerHeight;
 var img;
-var origWidth;
-var origHeight;
-
+var origStyle;
 var imgHeight;
 var imgWidth;
-
 var expand;
 function fullScreen(n){
 	
 	if (fullScreenOn){
-		img.style.position = "static";
-		img.style.zIndex = "0";
-		img.style.width = origWidth + "px";
-		img.style.height = origHeight + "px";
-		img.style.margin = "1em";
+		img.style = origStyle;
 		fullScreenOn = false;
 	}
 	else{
-		img = document.getElementsByClassName("galleryImg")[n];
-		origWidth = parseInt(img.style.width.replace("px",""));
-		origHeight = parseInt(img.style.height.replace("px",""));
-		imgWidth = origWidth;
-		imgHeight = origHeight;
+		img = document.querySelectorAll("main img")[n];
+		origStyle = img.style;
+		imgWidth = img.width;
+		imgHeight = img.height;
 		img.style.position = "fixed";
+		img.style.float = "none";
 		img.style.zIndex = "3";
-
 		img.style.left = "50%";
-		img.style.marginLeft = imgWidth/-2 + "px";
 		img.style.top = "50%";
+		img.style.margin = "0";
+		img.style.marginLeft = imgWidth/-2 + "px";
 		img.style.marginTop = imgHeight/-2 + "px";
+		console.log(imgHeight)
 		expand = setInterval(expandImg,5);
 		
 		fullScreenOn = true;
