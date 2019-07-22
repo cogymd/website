@@ -109,6 +109,17 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+#gallery > h2{
+	margin-top: 40px;
+}
+
+#purchase > h3{
+	
+}
+#purchase > img{
+	float: left;
+	clear: both;
+}
 
 .galleryImg
 {
